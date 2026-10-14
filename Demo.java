@@ -14,11 +14,11 @@
 }*/
 
 
-class Demo{
+/*class Demo{
 	public static void main(String[] args){
 		int[] nums = {-2,-5,-7,-8,-1};
 		
-		int large = 0;
+		int large = nums[0];
 		
 		for(int i=0; i<nums.length; i++){
 			if(nums[i]>large){
@@ -26,5 +26,19 @@ class Demo{
 			}
 		}
 		System.out.println(large);
+	}
+}*/
+class Demo{
+	public static void main(String[] args){
+		int[] nums = {18, 7, 32, 4, 15};
+		
+		int min = nums[0];
+		
+		for(int i=0; i<nums.length; i++){
+			if(nums[i]<min){
+				min = nums[i];
+			}
+		}
+		System.out.println(min);
 	}
 }
