@@ -62,7 +62,7 @@
 }*/
 
 
-class Demo{
+/*class Demo{
 	public static void main(String[] args){
 		int[] numbers = {25, 10, 70, 45, 60};
 
@@ -80,5 +80,79 @@ class Demo{
 		}
 		System.out.println(large);
 		System.out.println(small);
+	}
+}*/
+
+
+/*class Demo {
+	public static void main(String[] args) {
+		int[] numbers = {-8, -3, -15, -2};
+
+		int small = numbers[0];
+		int large = numbers[0];
+
+		for(int i = 1; i < numbers.length; i++){
+			if (numbers[i] < small ) {
+				small = numbers[i];
+			}
+
+			if (numbers[i] > large) {
+				large = numbers[i];
+			}
+		}
+		System.out.println(small);
+		System.out.println(large);
+	}
+	
+}*/
+
+
+//==========First complexity O(1) - constant time=======================
+
+
+/*class Demo {
+	public static void main(String[] args) {
+		int[] numbers = {12, 45, 7, 89, 32};
+
+		System.out.println(numbers[0]);
+	}
+
+	
+}*/
+
+
+//============Secound complexity O(2) - liner time==========================
+
+
+/*public class Demo {
+	public static void main(String[] args) {
+		int[] numbers = {18, 7, 32, 4, 15};
+
+		int small = numbers[0];
+
+		for (int i = 1; i < numbers.length; i++) {
+			if (small > numbers[i]) {
+				small = numbers[i];
+			}
+		}
+		System.out.println(small);
+	}
+
+	
+}*/
+
+
+//==============Thirde cmplexity: O(n^2) - quadratic time=====================
+
+
+public class Demo {
+	public static void main(String[] args) {
+		int[] numbers = {10, 20, 30, 40, 50};
+
+		for (int i = 0; i < numbers.length; i++) {
+			for (int j = 0; j < numbers.length; j++) {
+				System.out.println(numbers[i] + "," + numbers[j]);
+			}
+		}
 	}
 }
