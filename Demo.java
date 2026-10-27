@@ -145,14 +145,67 @@
 //==============Thirde cmplexity: O(n^2) - quadratic time=====================
 
 
+// public class Demo {
+// 	public static void main(String[] args) {
+// 		int[] numbers = {10, 20, 30, 40, 50};
+
+// 		for (int i = 0; i < numbers.length; i++) {
+// 			for (int j = 0; j < numbers.length; j++) {
+// 				System.out.println(numbers[i] + "," + numbers[j]);
+// 			}
+// 		}
+// 	}
+// }
+
+
+
+// ====================Searching algorithms=======================
+
+// ------------------------Linear Search------------------
+
+
+
+// public class Demo {
+// 	public static void main(String[] args) {
+// 		int[] num = {10, 20, 30, 40, 50};
+
+// 		int target = 100;
+// 		int search = 0;
+
+// 		for (int i = 0; i < num.length; i++) {
+// 			if(target == num[i]){
+// 				search = target;
+// 			}
+// 		}
+// 		if (target == search) {
+// 				System.out.println("target found" + search);
+// 			}else{
+// 				System.err.println("number not found");
+// 			}
+// 	}	
+// }
+
+
+
 public class Demo {
 	public static void main(String[] args) {
-		int[] numbers = {10, 20, 30, 40, 50};
+		int[] num = {10, 20, 30, 40, 50};
 
-		for (int i = 0; i < numbers.length; i++) {
-			for (int j = 0; j < numbers.length; j++) {
-				System.out.println(numbers[i] + "," + numbers[j]);
+		int target = 30;
+		int search = -1;
+
+		for (int i = 0; i < num.length; i++) {
+			if (num[i] == target) {
+				 search = i;
+
+				 break;
 			}
 		}
-	}
+
+		if (target != -1) {
+			System.err.println("target found " + search);
+		}else{
+			System.err.println("target not found");
+		}
+	}	
 }
