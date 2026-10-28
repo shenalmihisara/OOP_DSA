@@ -217,40 +217,80 @@
 // --------------------Binary Search------------------------------------
 
 
+// public class Demo {
+// 	public static void main(String[] args) {
+// 		int[] nums = {10, 20, 30, 40, 50, 60, 70};
+
+// 		int target = 70; 
+
+// 		int left = 0;
+// 		int right = nums.length - 1;
+
+// 		int searchnum = -1;
+
+// 		while (left <= right) {
+// 			int mid = left + (right-left)/2;
+
+// 			if (nums[mid] == target) {
+
+// 				searchnum = mid;
+
+// 				break;
+
+// 			}else if (nums[mid] < target) {
+
+// 				left = mid + 1;
+
+// 			}else{
+
+// 				right = mid - 1;
+// 			}
+// 		}
+
+// 		if (searchnum != -1) {
+// 			System.out.println("Number Found : " + searchnum);
+// 		}else{
+// 			System.out.println("number not found");
+// 		}
+// 	}	
+// }
+
+
+
 public class Demo {
 	public static void main(String[] args) {
-		int[] nums = {10, 20, 30, 40, 50, 60, 70};
-
-		int target = 70; 
+		int[] numbers = {10, 20, 30, 40, 50};
+		
+		int target = 35;
 
 		int left = 0;
-		int right = nums.length - 1;
+		int right = numbers.length-1;
 
-		int searchnum = -1;
+		int Searching = -1;
 
 		while (left <= right) {
 			int mid = left + (right-left)/2;
 
-			if (nums[mid] == target) {
-
-				searchnum = mid;
+			if (target == numbers[mid]) {
+				Searching = mid;
 
 				break;
 
-			}else if (nums[mid] < target) {
+			}else if (target > numbers[mid]) {
 
-				left = mid + 1;
+				left = mid+1;
 
 			}else{
 
-				right = mid - 1;
+				right = mid-1;
 			}
 		}
-
-		if (searchnum != -1) {
-			System.out.println("Number Found : " + searchnum);
+		
+		if (Searching != -1) {
+			System.out.println("Number Found : " + Searching);
 		}else{
-			System.out.println("number not found");
+			System.out.println("Number Not found : " + Searching);
 		}
+
 	}	
 }
