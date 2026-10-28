@@ -393,31 +393,90 @@
 // }
 
 
+
+// public class Demo {
+// 	public static void main(String[] args) {
+// 		int[] numbers = {8, 3, 6, 2};
+
+// 		int temp = -1;
+
+// 		for (int i = 0; i < numbers.length - 1; i++) {
+// 			for (int j = 0; j < numbers.length - 1 - i; j++) {
+// 				if (numbers[j] < numbers[j+1]) {
+// 					temp = numbers[j];
+
+// 					numbers[j] = numbers[j+1];
+// 					numbers[j+1] = temp;
+
+// 				} else {
+// 					temp = numbers[j+1];
+// 				}
+// 			}
+// 		}
+
+// 		for (int i = 0; i < numbers.length; i++) {
+// 			System.out.println(numbers[i]);
+// 		}
+// 	}
+// }
+
+
+// ---------------------Selection Sort--------------------
+
+
+// public class Demo {
+
+//     public static void main(String[] args) {
+//         int[] numbers = {29, 10, 14, 37, 13};
+
+//         for (int i = 0; i < numbers.length - 1; i++) {
+
+//             int minIndex = i;
+
+//             for (int j = i; j < numbers.length; j++) {
+//                 if (numbers[j] < numbers[minIndex]) {
+//                     minIndex = j;
+//                 }
+
+//             }
+
+//             int temp = numbers[i];
+//             numbers[i] = numbers[minIndex];
+//             numbers[minIndex] = temp;
+
+//         }
+//         for (int i = 0; i < numbers.length; i++) {
+//             System.out.println(numbers[i]);
+//         }
+//     }
+// }
+
+
 /**
  * Demo
- */
-public class Demo {
-	public static void main(String[] args) {
-		int[] numbers = {8, 3, 6, 2};
+//  */
+// public class Demo {
+// 	public static void main(String[] args) {
+// 		int[] num = {29, 10, 14, 37, 13};
+		
+// 		for (int i = 0; i < num.length - 1; i++) {
+// 			int minIndex = i;
 
-		int temp = -1;
+// 			for (int j = i; j < num.length; j++) {
+// 				if (num[j] < num[minIndex]) {
+// 					minIndex = j;
+// 				}
+// 			}
+// 			int temp = num[i];
+// 			num[i] = num[minIndex];
+// 			num[minIndex] = temp;
+// 		}
+// 		for (int i = 0; i < num.length; i++) {
+// 			System.out.println(num[i]);
+// 		}
+// 	}
+// }
 
-		for (int i = 0; i < numbers.length - 1; i++) {
-			for (int j = 0; j < numbers.length - 1 - i; j++) {
-				if (numbers[j] < numbers[j+1]) {
-					temp = numbers[j];
 
-					numbers[j] = numbers[j+1];
-					numbers[j+1] = temp;
+// ---------------------Insertion Sort--------------------
 
-				} else {
-					temp = numbers[j+1];
-				}
-			}
-		}
-
-		for (int i = 0; i < numbers.length; i++) {
-			System.out.println(numbers[i]);
-		}
-	}
-}
