@@ -257,40 +257,107 @@
 
 
 
-public class Demo {
-	public static void main(String[] args) {
-		int[] numbers = {10, 20, 30, 40, 50};
+// public class Demo {
+// 	public static void main(String[] args) {
+// 		int[] numbers = {10, 20, 30, 40, 50};
 		
-		int target = 35;
+// 		int target = 35;
 
-		int left = 0;
-		int right = numbers.length-1;
+// 		int left = 0;
+// 		int right = numbers.length-1;
 
-		int Searching = -1;
+// 		int Searching = -1;
 
-		while (left <= right) {
-			int mid = left + (right-left)/2;
+// 		while (left <= right) {
+// 			int mid = left + (right-left)/2;
 
-			if (target == numbers[mid]) {
-				Searching = mid;
+// 			if (target == numbers[mid]) {
+// 				Searching = mid;
 
-				break;
+// 				break;
 
-			}else if (target > numbers[mid]) {
+// 			}else if (target > numbers[mid]) {
 
-				left = mid+1;
+// 				left = mid+1;
 
-			}else{
+// 			}else{
 
-				right = mid-1;
-			}
-		}
+// 				right = mid-1;
+// 			}
+// 		}
 		
-		if (Searching != -1) {
-			System.out.println("Number Found : " + Searching);
-		}else{
-			System.out.println("Number Not found : " + Searching);
-		}
+// 		if (Searching != -1) {
+// 			System.out.println("Number Found : " + Searching);
+// 		}else{
+// 			System.out.println("Number Not found : " + Searching);
+// 		}
 
-	}	
-}
+// 	}	
+// }
+
+
+
+// ====================Soarting=======================
+
+// ---------------------Bubble Sort--------------------
+
+
+// public class Demo {
+
+//     public static void main(String[] args) {
+//         int[] nums = {5, 2, 4, 1, 3};
+
+//         int large = 0;
+
+//         for (int i = 0; i < nums.length-1-i; i++) {
+
+// 			for (int j = 0; j < nums.length - 1; j++) {
+// 				if (nums[j] > nums[j+1]) {
+					
+// 					large = nums[j];
+
+// 					nums[j] = nums[j+1];
+// 					nums[j+1] = large;
+// 				}
+// 			}
+
+// 		}
+
+// 		for (int i = 0; i < nums.length; i++) {
+//             System.out.println(nums[i]);
+//         }
+
+        //     if (nums[1] > nums[2]) {
+        //         large = nums[1];
+
+        //         nums[1] = nums[2];
+        //         nums[2] = large;
+
+        //     } else {
+        //         large = nums[2];
+        //     }
+
+        //     if (nums[2] > nums[3]) {
+        //         large = nums[2];
+
+        //         nums[2] = nums[3];
+        //         nums[3] = large;
+
+        //     } else {
+        //         large = nums[3];
+        //     }
+
+        //     if (nums[3] > nums[4]) {
+        //         large = nums[3];
+
+        //         nums[3] = nums[4];
+        //         nums[4] = large;
+
+        //     } else {
+        //         large = nums[4];
+        //     }
+        // }
+
+        
+//     }
+// }
