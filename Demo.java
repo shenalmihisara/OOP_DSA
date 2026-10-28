@@ -1,3 +1,5 @@
+
+
 /*class Demo{
 	public static void main(String[] args){
 		int[] nums = {12,45,7,89,32};
@@ -187,25 +189,68 @@
 
 
 
+// public class Demo {
+// 	public static void main(String[] args) {
+// 		int[] num = {10, 20, 30, 40, 50};
+
+// 		int target = 30;
+// 		int search = -1;
+
+// 		for (int i = 0; i < num.length; i++) {
+// 			if (num[i] == target) {
+// 				 search = i;
+
+// 				 break;
+// 			}
+// 		}
+
+// 		if (target != -1) {
+// 			System.err.println("target found " + search);
+// 		}else{
+// 			System.err.println("target not found");
+// 		}
+// 	}	
+// }
+
+
+
+// --------------------Binary Search------------------------------------
+
+
 public class Demo {
 	public static void main(String[] args) {
-		int[] num = {10, 20, 30, 40, 50};
+		int[] nums = {10, 20, 30, 40, 50, 60, 70};
 
-		int target = 30;
-		int search = -1;
+		int target = 70; 
 
-		for (int i = 0; i < num.length; i++) {
-			if (num[i] == target) {
-				 search = i;
+		int left = 0;
+		int right = nums.length - 1;
 
-				 break;
+		int searchnum = -1;
+
+		while (left <= right) {
+			int mid = left + (right-left)/2;
+
+			if (nums[mid] == target) {
+
+				searchnum = mid;
+
+				break;
+
+			}else if (nums[mid] < target) {
+
+				left = mid + 1;
+
+			}else{
+
+				right = mid - 1;
 			}
 		}
 
-		if (target != -1) {
-			System.err.println("target found " + search);
+		if (searchnum != -1) {
+			System.out.println("Number Found : " + searchnum);
 		}else{
-			System.err.println("target not found");
+			System.out.println("number not found");
 		}
 	}	
 }
